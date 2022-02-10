@@ -3,17 +3,15 @@ def calculatePay():
     # This first line is provided for you
     hrs = input("Enter Hours:")
     rate = input("Enter Rate: ")
-    try:
-        fhrs = float(hrs)
-        frate = float(rate)
-        if fhrs> 40:
-            OT= fhrs - 40.0
-            Pay = fhrs*frate + .5*OT*frate
-        else:
-            Pay = fhrs*frate
-        print(Pay)    
-    except:
-        print("Please enter a number")      
+    
+    fhrs = float(hrs)
+    frate = float(rate)
+    if fhrs> 40:
+        OT= fhrs - 40.0
+        Pay = fhrs*frate + .5*OT*frate
+    else:
+        Pay = fhrs*frate
+    print(Pay)    
 
     # end assignment
 
